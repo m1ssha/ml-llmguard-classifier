@@ -1,8 +1,8 @@
 ## 1. Multi-dataset ingestion foundation
 
-- [ ] 1.1 Add configurable source registry for multiple HF datasets (including Anthropic/hh-rlhf)
-- [ ] 1.2 Implement chosen/rejected mapping adapter to canonical text records with origin flags
-- [ ] 1.3 Extend loader metadata to persist dataset_id, revision/version, and mapping strategy per source
+- [x] 1.1 Add configurable source registry for multiple HF datasets (including Anthropic/hh-rlhf)
+- [x] 1.2 Implement chosen/rejected mapping adapter to canonical text records with origin flags
+- [x] 1.3 Extend loader metadata to persist dataset_id, revision/version, and mapping strategy per source
 
 ## 2. Canonical schema and data quality hardening
 
