@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "experiment_name": "default",
+  "output_root": "classifier/experiments"
+}
+

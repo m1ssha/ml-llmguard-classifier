@@ -1,0 +1,25 @@
+{
+  "mandatory_fields": [
+    "id",
+    "text",
+    "binary_label",
+    "threat_type",
+    "language",
+    "source"
+  ],
+  "required_categories": [
+    "benign",
+    "malicious",
+    "borderline",
+    "obfuscated",
+    "near-miss"
+  ],
+  "required_languages": [
+    "ru",
+    "en",
+    "mixed",
+    "translit",
+    "distorted"
+  ]
+}
+
