@@ -1,0 +1,10 @@
+{
+  "labels": [
+    "none",
+    "prompt_injection"
+  ],
+  "label_to_id": {
+    "none": 0,
+    "prompt_injection": 1
+  }
+}

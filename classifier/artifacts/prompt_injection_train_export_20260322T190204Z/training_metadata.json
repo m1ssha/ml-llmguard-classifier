@@ -1,0 +1,15 @@
+{
+  "dataset_id": "neuralchemy/Prompt-injection-dataset",
+  "seed": 42,
+  "experiment_name": "prompt_injection_train_export",
+  "output_root": "classifier/artifacts",
+  "active_profile": "balanced",
+  "rows": {
+    "train": 4391,
+    "validation": 941,
+    "test": 942
+  },
+  "train_samples": 5332,
+  "test_samples": 942,
+  "model_type": "stronger_encoder_pipeline"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2",
+  "files": {
+    "model": "encoder_model.joblib",
+    "tokenizer": "tokenizer.joblib",
+    "metadata": "training_metadata.json",
+    "label_mapping": "label_mapping.json",
+    "thresholds": "thresholds.json",
+    "evaluation_report": "evaluation_report.json"
+  },
+  "profile_requested": "balanced",
+  "dataset_id": "neuralchemy/Prompt-injection-dataset"
+}

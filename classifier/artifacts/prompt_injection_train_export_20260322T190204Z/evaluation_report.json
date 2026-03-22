@@ -1,0 +1,63 @@
+{
+  "dataset_id": "neuralchemy/Prompt-injection-dataset",
+  "profile_requested": "balanced",
+  "profiles": {
+    "balanced": {
+      "thresholds": {
+        "binary_threshold": 0.5,
+        "threat_threshold": 0.5
+      },
+      "binary_metrics": {
+        "accuracy": 0.9522292993630573,
+        "precision": 0.9518716577540107,
+        "recall": 0.967391304347826,
+        "f1": 0.9595687331536388,
+        "roc_auc": 0.9950529542920847
+      }
+    },
+    "high_recall_security": {
+      "thresholds": {
+        "binary_threshold": 0.35,
+        "threat_threshold": 0.4
+      },
+      "binary_metrics": {
+        "accuracy": 0.9479830148619958,
+        "precision": 0.9284497444633731,
+        "recall": 0.9873188405797102,
+        "f1": 0.9569798068481123,
+        "roc_auc": 0.9950529542920847
+      }
+    }
+  },
+  "robustness_slices": {
+    "obfuscation": {
+      "count": 90,
+      "mean_score": 0.9418509860467716
+    },
+    "policy_bypass": {
+      "count": 26,
+      "mean_score": 0.9158638627104144
+    },
+    "multilingual_transfer": {
+      "count": 77,
+      "mean_score": 0.9428674808411878
+    },
+    "benign_security_discussion": {
+      "count": 0,
+      "mean_score": 0.0
+    }
+  },
+  "artifacts": {
+    "encoder_model": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\encoder_model.joblib",
+    "tokenizer": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\tokenizer.joblib",
+    "label_mapping": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\label_mapping.json",
+    "thresholds": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\thresholds.json",
+    "training_metadata": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\training_metadata.json",
+    "artifact_manifest": "classifier\\artifacts\\prompt_injection_train_export_20260322T190204Z\\artifact_manifest.json"
+  },
+  "rows": {
+    "train": 4391,
+    "validation": 941,
+    "test": 942
+  }
+}

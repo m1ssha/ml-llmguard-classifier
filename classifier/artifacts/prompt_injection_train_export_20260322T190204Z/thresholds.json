@@ -1,0 +1,10 @@
+{
+  "balanced": {
+    "binary_threshold": 0.5,
+    "threat_threshold": 0.5
+  },
+  "high_recall_security": {
+    "binary_threshold": 0.35,
+    "threat_threshold": 0.4
+  }
+}
