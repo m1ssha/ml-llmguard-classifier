@@ -5,11 +5,15 @@ from dataclasses import dataclass
 
 MANDATORY_FIELDS = (
     "id",
-    "text",
     "binary_label",
     "threat_type",
     "language",
     "source",
+)
+
+MANDATORY_TEXT_ANY_OF = (
+    "text",
+    "prompt",
 )
 
 REQUIRED_CATEGORIES = (
@@ -32,6 +36,7 @@ REQUIRED_LANGUAGES = (
 @dataclass(frozen=True)
 class LabelSchema:
     mandatory_fields: tuple[str, ...] = MANDATORY_FIELDS
+    mandatory_text_any_of: tuple[str, ...] = MANDATORY_TEXT_ANY_OF
     required_categories: tuple[str, ...] = REQUIRED_CATEGORIES
     required_languages: tuple[str, ...] = REQUIRED_LANGUAGES
 
