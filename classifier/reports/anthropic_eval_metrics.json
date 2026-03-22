@@ -1,0 +1,59 @@
+{
+  "dataset": "Anthropic/hh-rlhf",
+  "mapping_policy": "chosen_rejected_policy_a",
+  "revision": "latest",
+  "rows": {
+    "train": 321600,
+    "validation": 17104,
+    "test": 17104
+  },
+  "profiles": {
+    "balanced": {
+      "threshold": 0.5,
+      "metrics": {
+        "accuracy": 0.6420720299345183,
+        "precision": 0.6474872541879096,
+        "recall": 0.6237137511693172,
+        "f1": 0.6353782013103038,
+        "roc_auc": 0.6969546918603278
+      },
+      "origin_breakdown": {
+        "chosen": {
+          "count": 8552,
+          "false_positive": 2904,
+          "false_negative": 0
+        },
+        "rejected": {
+          "count": 8552,
+          "false_positive": 0,
+          "false_negative": 3218
+        }
+      }
+    },
+    "high_recall_security": {
+      "threshold": 0.35,
+      "metrics": {
+        "accuracy": 0.5130963517305893,
+        "precision": 0.5066690484696915,
+        "recall": 0.9949719363891487,
+        "f1": 0.6714274441726505,
+        "roc_auc": 0.6969546918603278
+      },
+      "origin_breakdown": {
+        "chosen": {
+          "count": 8552,
+          "false_positive": 8285,
+          "false_negative": 0
+        },
+        "rejected": {
+          "count": 8552,
+          "false_positive": 0,
+          "false_negative": 43
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "script": "classifier/scripts/anthropic_evaluation.py"
+  }
+}
